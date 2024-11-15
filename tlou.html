@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <title>GameQuest</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            margin-top: 50px;
+        }
+
+        .navbar-brand img {
+            height: 40px;
+        }
+        .navbar-inverse .navbar-brand img {
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        .navbar-inverse {
+            background-color: transparent;
+            border: none;
+        }
+        .navbar-text {
+            font-size: 18px;
+            color: white;
+            display: inline-block;
+            padding-right: 20px;
+        }
+        .navbar-inverse .navbar-brand {
+            color: #111;
+        }
+        .navbar-inverse a:hover, 
+        .navbar-inverse .navbar-text:hover, 
+        .navbar-inverse .dropdown-menu li a:hover {
+            color: #ff0169 !important;
+            background-color: transparent !important;
+        }
+
+
+        .navbar-inverse .dropdown-menu li a:hover {
+            background-color: #ff0169; 
+            color: white; 
+        }
+        .btn-pink {
+            background-color: #ff0169;
+            color: white;
+            border-color: #ff0169;
+        }
+
+        .btn-pink:hover {
+            background-color: #e6005c;
+            border-color: #e6005c;
+        }
+        .thumbnail {
+            background-color: black; 
+            color: white;
+            border: none;
+            margin-left: 40px;
+            margin-top: 50px;
+        }
+        .list-group-item {
+            border: none;
+        }
+        .list-group-item-heading h4, .list-group-item-text {
+            color: white;
+        }
+        .col-md-10 {
+            margin-top: 50px;
+        }
+        .modal-body .form-control {
+            background-color: black;
+            color: white;
+            border: 1px solid #ff0169;
+        }
+        ::placeholder {
+            color: white;
+            opacity: 0.7;
+        }
+
+        .form-control-input-lg {
+            background-color: black;
+            color: white;
+            border: 1px solid #ff0169;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <div class="navbar-text" style="padding-right: 20px;">
+                GAMEQUEST
+            </div>
+
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="" class="navbar-brand"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+    
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar2">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar2">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><div class="container-fluid ">
+                    <div class="dropdown">
+                        <button class="btn btn-pink dropdown-toggle" data-toggle="dropdown">DISCOVER <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Fantasy</a></li>
+                                <li><a href="#">Adventure</a></li>
+                                <li><a href="#">Horror</a></li>
+                                <li><a href="#">Casual</a></li>
+                                <li><a href="#">Free to Play</a></li>
+                            </ul>
+                    </div>
+                    </li>
+                    <li><a href="#">LATEST GAME NEWS</a></li>
+                    <li><a href="#">ON SALE</a></li>
+                    <li><a href="#">BROWSE GAMES <i class="glyphicon glyphicon-search"></i></a></li>
+                    <li><form class="navbar-form navbar-left" role="search" style="display: inline-block;">
+                    <form class="navbar-form navbar-left" role="search" style="display: inline-block;">
+                        <div class="input-group" style="border-radius: 50px;">
+                            <input type="text" class="form-control" placeholder="Search..." style="border-radius: 50px;">
+                        </div>
+                    </form></li>
+                </ul>
+            </div>
+        </div>
+    </nav> 
+
+    <aside class="col-md-4">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="list-group">
+                <a href="horizon.html" class="list-group-item" style="padding:0; margin:0;">
+                    <div class="col-md-3" style="padding:0; margin:0;">
+                        <img src="images/horizon_cover.png" style="width:100%; height:100%;">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="list-group-item-heading">
+                            <h4 style="color:#ff0169;">Horizon Zero Dawn</h4>
+                            <h4>Php2,299.00</h4>
+                        <div class="clearfix"></div>
+                        </div>
+                        <p class="list-group-item-text"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="list-group">
+                <a href="rdr2.html" class="list-group-item" style="padding:0; margin:0;">
+                    <div class="col-md-3" style="padding:0; margin:0;">
+                        <img src="images/rdr2_cover.jpg" style="width:100%; height:100%;">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="list-group-item-heading">
+                        <h4 style="color:#ff0169;">Red Dead Redemption 2</h4>
+                            <h4>Php3,299.00</h4>
+                        <div class="clearfix"></div>
+                        </div>
+                        <p class="list-group-item-text"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="list-group">
+                <a href="mc.html" class="list-group-item" style="padding:0; margin:0;">
+                    <div class="col-md-3" style="padding:0; margin:0;">
+                        <img src="images/mc_icon.png" style="width:100%; height:100%;">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="list-group-item-heading">
+                            <h4 style="color:#ff0169;">Minecraft</h4>
+                            <h4>Php1,299.00</h4>
+                        <div class="clearfix"></div>
+                        </div>
+                        <p class="list-group-item-text"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-10 col-md-offset-1">
+            <div class="list-group">
+                <a href="codmw.html" class="list-group-item" style="padding:0; margin:0;">
+                    <div class="col-md-3" style="padding:0; margin:0;">
+                        <img src="images/cod_icon.png" style="width:100%; height:100%;">
+                    </div>
+                    <div class="col-md-9">
+                        <div class="list-group-item-heading">
+                        <h4 style="color:#ff0169;">Call of Duty Modern Warfare</h4>
+                            <h4>Php1,299.00</h4>
+                        <div class="clearfix"></div>
+                        </div>
+                        <p class="list-group-item-text"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </aside>
+
+    <header class="col-md-8">
+    <div class="col-md-12">
+        <div class="thumbnail" >
+                <img src="images/tlou.jpg" style="width:100%; border-radius:10px;">
+                    <div class="caption">
+                        <h4 class="pull-right" style="color: white">Php2,199.00</h4>
+                        <h4><a href="tlou.html">The Last of Us</a></h4>
+                        <div><button class="btn btn-primary" data-target="#buy_me" data-toggle="modal" style="margin-left: 10px; margin-bottom: 30px; margin-top: 20px;">Buy this Game</button></div>
+                        <div class="modal fade" id="buy_me">
+                            <div class="modal-dialog">
+                                <div style="background-color:black;" class="modal-content">
+                                    <div class="modal-header">
+                                        <button style="color:white;" class="close" data-dismiss="modal">&times</button>
+                                        <h2 style="color:#ff0169;" class="modal-title"><b>BUY GAME</b></h2>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control-input-lg" placeholder="Enter your Name">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control-input-lg" placeholder="Enter your Email">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control-input-lg" placeholder="Enter Contact No.">
+                                            </div>
+                                            <div class="form-group">
+                                                <textarea style="font-size:20px; color:gray;" rows="5" name="" id="" class="form-control">Address</textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-danger" data-dismiss="modal">Submit Order</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="color: white;">Discover the award-winning game that inspired the critically acclaimed television show. Guide Joel and Ellie through a post-apocalyptic America, and encounter unforgettable allies and enemies in The Last of Us™.</p>
+                    </div>
+            </div>
+        </div>
+    </header>
+    
+    <div class="col-md-8 col-md-offset-4">
+        <div class="col-md-12">
+            <div class="well">
+                <div class="text-right">
+                    <button class="btn btn-danger">Leave Comment</button>
+                </div>
+            </div>
+            
+            <div class="well">
+                <span class="lead">Mr. Coder</span>
+                <span class="pull-right">3 days ago</span><hr/>
+                <p>I really love this game..amazing experience on playing for game nights...</p>
+            </div>
+
+            <div class="well">
+                <span class="lead">Mr. Coder</span>
+                <span class="pull-right">3 days ago</span><hr/>
+                <p>I really love this game..amazing experience on playing for game nights...</p>
+            </div>
+
+            <div class="well">
+                <span class="lead">Mr. Coder</span>
+                <span class="pull-right">3 days ago</span><hr/>
+                <p>I really love this game..amazing experience on playing for game nights...</p>
+            </div>
+
+            <div class="well">
+                <span class="lead">Mr. Coder</span>
+                <span class="pull-right">3 days ago</span><hr/>
+                <p>I really love this game..amazing experience on playing for game nights...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page-header"><h3 class="text-center" style="color: white;">Related Products</h3></div>
+        <div class="col-md-3">
+        <div class="thumbnail" >
+                <img src="images/elden_coverr.jpg" style="width:100%; border-radius:10px;">
+                    <div class="caption">
+                        <h4 class="pull-right" style="color: white">Php5,000</h4>
+                        <h4><a href="elden.html">Elden Ring</a></h4>
+                        <p style="color: white;">THE CRITICALLY ACCLAIMED FANTASY ACTION RPG. Rise, Tarnished, and be guided by grace to brandish the power of the Elden Ring and become an Elden Lord in the Lands Between.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+        <div class="thumbnail" >
+                <img src="images/monkey_coverr.jpeg" style="width:100%; border-radius:10px;">
+                    <div class="caption">
+                        <h4 class="pull-right" style="color: white">Php5,000</h4>
+                        <h4><a href="monkey.html">Black Myth: Wukong</a></h4>
+                        <p style="color: white;">Black Myth: Wukong is an action RPG rooted in Chinese mythology. You shall set out as the Destined One to venture into the challenges and marvels ahead, to uncover the obscured truth beneath the veil of a glorious legend from the past.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+        <div class="thumbnail" >
+                <img src="images/gtav_cover.jpg" style="width:100%; border-radius:10px;">
+                    <div class="caption">
+                        <h4 class="pull-right" style="color: white">Php500.00</h4>
+                        <h4><a href="gtav.html">Grand Theft Auto V</a></h4>
+                        <p style="color: white;">Grand Theft Auto V for PC offers players the option to explore the award-winning world of Los Santos and Blaine County in resolutions of up to 4k and beyond, as well as the chance to experience the game running at 60 frames per second.</p>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+        <div class="thumbnail" >
+                <img src="images/farcry6_cover.jpg" style="width:100%; border-radius:10px;">
+                    <div class="caption">
+                        <h4 class="pull-right" style="color: white">Php3,000.00</h4>
+                        <h4><a href="farcry6.html">Far Cry 6</a></h4>
+                        <p style="color: white;">Enter the adrenaline-filled world of a modern-day guerrilla revolution. With stunning vistas, visceral gunplay, and a huge variety of gameplay experiences, there's never been a better time to join the fight.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
